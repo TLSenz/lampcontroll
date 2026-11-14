@@ -158,7 +158,7 @@ The Wi-Fi scan reported by the lamp:
 [
   {"ssid": "YOUR_HOME_WIFI", "bssid": "aa:bb:cc:dd:ee:ff",
    "signal": 68, "channel": 9, "encryption": 6, "cipher": 3},
-  {"ssid": "austrasse-gast", "bssid": "b2:4b:fe:f4:dd:a1",
+  {"ssid": "NEIGHBOUR_WIFI", "bssid": "aa:bb:cc:dd:ee:02",
    "signal": 68, "channel": 9, "encryption": 8, "cipher": 4},
   {"ssid": "YOUR_HOME_WIFI", "bssid": "aa:bb:cc:dd:ee:02",
    "signal": 23, "channel": 9, "encryption": 6, "cipher": 3}

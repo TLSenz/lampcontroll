@@ -35,12 +35,12 @@ YOUR_HOME_WIFI
 • Verbunden
 Bekanntes Netzwerk
 Andere Netzwerke
-austrasse-gast
-bianconero94
-Casa Maldonado Silva
+NEIGHBOUR_WIFI
+NEIGHBOUR_WIFI_2
+NEIGHBOUR_WIFI_3
 Meross_XXXXXX
-NSA_observation truck_2.1
-xvb-29652
+NEIGHBOUR_WIFI_4
+NEIGHBOUR_WIFI_5
 ```
 
 That identified:
