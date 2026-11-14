@@ -1,0 +1,11 @@
+reports/
+__pycache__/
+*.pyc
+.DS_Store
+lamp_config.json
+lamp_env.sh
+macapp/build/
+android/build/
+android/LampControll.apk
+*.keystore
+*.idsig
