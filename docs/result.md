@@ -99,7 +99,45 @@ $ python3 tools/lampctl.py color 0000FF
 color #0000ff -> verified (reported #0000ff)
 ```
 
-The lamp's original blue colour was restored after the tests.
+The lamp was left on and white after the tests.
+
+## 4. macOS app
+
+The SwiftUI app was built, ad-hoc signed, installed at
+`/Applications/LampControll.app`, and it connected to the real lamp
+(`msl120dr · fw 4.1.12`, On, brightness 100).
+
+The same `LampClient.swift` used by the app was exercised against the lamp:
+
+```text
+before: on=true rgb=#ffffff
+toggle: on=false verified=true
+colour: rgb=#34c759 verified=true
+restored: on=true rgb=#ffffff
+```
+
+## 5. Android app
+
+The signed APK was installed on an Android 15 emulator. The app connected to
+the lamp and showed:
+
+```text
+● msl120dr · fw 4.1.12 · On
+Brightness 100%
+```
+
+Tapping the green swatch changed the real lamp:
+
+```text
+$ python3 tools/lampctl.py status
+color: #34c759 (rgb 3458905)
+```
+
+Tapping the white swatch restored it:
+
+```text
+color: #ffffff (rgb 16777215)
+```
 
 ## Reproduce
 
@@ -108,4 +146,7 @@ python3 tools/lampctl.py discover   # first run / IP change
 python3 tools/lampctl.py status
 python3 tools/lampctl.py toggle
 python3 tools/lampctl.py color FF8800
+
+./macapp/build.sh                   # macOS app
+./android/build.sh                  # signed Android APK
 ```

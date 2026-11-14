@@ -37,8 +37,10 @@ $ python3 tools/lampctl.py color 0000FF
 color #0000ff -> verified (reported #0000ff)
 ```
 
-The Android app was also tested against the real lamp: tapping its green
-swatch changed the lamp to `#34c759`, tapping white restored `#ffffff`.
+The macOS app was tested with the same Swift client: toggle verified, colour
+`#34c759` verified, then restored to white. The Android app was also tested
+against the real lamp: tapping its green swatch changed the lamp to `#34c759`,
+tapping white restored `#ffffff`.
 
 ## Apps
 
