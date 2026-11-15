@@ -95,6 +95,9 @@ stops responding, `lampctl` automatically rediscovers the lamp on
   `capacity: 6`.
 - After onboarding the local key is the empty string.
 
+A beginner-friendly explanation of the protocol and a 200-line client:
+[docs/communicate.md](docs/communicate.md).
+
 Full reverse-engineering notes, packet formats and the Wi-Fi onboarding
 payload: [docs/protocol.md](docs/protocol.md).
 How the SSID was discovered despite macOS privacy: [docs/discovery.md](docs/discovery.md).
